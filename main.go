@@ -28,7 +28,7 @@ type Paciente struct {
 func ConectarBanco() (*sql.DB, error) {
 	// String de conexão para MySQL
 	// formato: "<usuário>:<senha>@tcp(<host>:<porta>)/<nome-do-banco>"
-	dsn := "root:Curtislow3d@tcp(localhost:3306)/pacientes" // Substitua com seus dados
+	dsn := "user:password@tcp(localhost:3306)/pacientes" // Substitua com seus dados
 
 	// Abre a conexão com o banco de dados MySQL
 	db, err := sql.Open("mysql", dsn)
